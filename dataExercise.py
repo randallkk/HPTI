@@ -10,11 +10,18 @@ import re
 
 ps=PorterStemmer()
 
-harryPotter = pd.read_csv("C:/Users/User/Desktop/datasets/HP1.csv",sep=";" ,encoding="ISO-8859-1")
+harryPotter = pd.read_csv("C:/Users/User/Desktop/datasets/HP1.csv", sep=";", encoding="ISO-8859-1", index_col=0)
 trainPotter = harryPotter['Sentence'].str.replace('[^a-zA-Z ]', '')
+
+print(harryPotter)
 
 tokenData = nltk.word_tokenize(str(trainPotter))
 print(tokenData)
 
+stemData=[]
 for w in tokenData:
-    print(ps.stem(w))
+    tempData=[]
+    tempData=ps.stem(w)
+    stemData.append(tempData)
+    
+print(stemData)
