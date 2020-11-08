@@ -16,5 +16,10 @@ trainPotter = harryPotter['Sentence'].str.replace('[^a-zA-Z ]', '')
 tokenData = nltk.word_tokenize(str(trainPotter))
 print(tokenData)
 
+stemData=[]
 for w in tokenData:
-    print(ps.stem(w))
+    tempData=[]
+    tempData=ps.stem(w)
+    stemData.append(tempData)
+    
+print(stemData)
