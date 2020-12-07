@@ -1,12 +1,11 @@
 # HPTI
 
-mbti 분류할 캐릭터는 가장 데이터가 많은 5명으로 잘라냄
+## 이 project는 2020년 2학기 데이터 분석 및 활용 수업의 기말 프로젝트입니다.
+Training Data로 MBTI dataset을 활용하고 Test Data는 해리포터 영화 대사를 넣어서 해리포터에 나오는 인물에 대한 MBTI를 알아보고자 하는 프로젝트 입니다.
 
-## 할 일
+<br>
 
-1. Data balancing(Weight Balancing or Oversampling): <a link=https://3months.tistory.com/414 ><\a>
-
-2. stopwords 조정, XGBoost
+데이터 분석을 위한 언어로는 Python을 이용했고 pandas, scikit-learn, tensorflow 등을 활용하였습니다.
 
 ## Schedule
 
